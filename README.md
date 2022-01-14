@@ -226,3 +226,63 @@ Visibility can set to hidden, and what this does is that it makes that element d
 position, and all the other elements still flow around it as if it's still there
 ```
 [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+
+## CSS Static and Relative Positioning
+```
+Rules of display
+1. Content is Everything
+The content is the first thing that determines how large things gets displayed and what the height and the width will be
+
+2. Order Comes From Code
+<h1></h1> <img>
+<p></p>   <h1></h1>
+<p></p>   <p></p>
+<p></p>   <p></p>
+<img>     <p></p>
+The default layout order is determined by your code
+
+3. Childern Sit On Parents
+<div>
+	<h1>a programmer</h1>
+</div>
+If inside this div you add an h1 with some text, then that h1 is going to be on top of the div so its more towards the 
+viewer and away from the screen
+
+Position property:
+Static
+Relative
+Absolute
+Fixed
+
+Static means go along with the HTML rules and keep to the default
+
+Relative 
+selector{
+	position: relative
+	left: 30px;
+}
+This push the selector 30 pixels from the left of the previos position
+
+Coordinates:
+Top
+Bottom
+Left
+Right
+
+Two things tha you have to remember when you're dealing with relative positioning
+
+The first thing is that when you move an element that has a relative position,
+say we're pushing it down by 50 pixels it doesn't affect the position
+of anything else on screen, it's as if the old position was kept and everything else
+just flows around it as if it was never moved.
+
+The other thing to remember is that when we change the coordinate properties,
+for example we're saying make the top corner property for this relatively
+positioned image 50 pixels, what that really means is that we're taking the top
+of where that image used to be and we're giving it a 50 pixel Margin from the top
+of our current image
+```
+
+## Absolute Positioning
+```
+```
