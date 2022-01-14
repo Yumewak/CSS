@@ -142,3 +142,87 @@ img:hover{
     background-color: gold;
 }
 ```
+
+## Favicons
+```
+<link rel="icon" href="favicon.ico">
+```
+
+## Divs
+```
+<div>: The Content Division element
+```
+
+## Box Model
+```
+{height:600px;}
+{width:100%;}
+{border:solid;}
+{border-width:50px;}
+{border-top:0;}
+{border-width:0px 10px 20px 30px;}
+
+{padding:20px;}
+{margin:10px;}
+```
+![imagen](https://user-images.githubusercontent.com/93165649/149569015-68979ee6-01ea-4f94-a141-5e9b90482ad1.png) \
+[div](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) \
+[Padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) \
+[Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) \
+[Border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) \
+[Border Style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style)
+
+## CSS Display Property
+```
+Display values:
+Block
+Inline
+Inline-Block
+None
+```
+```css
+display:block;
+```
+```
+By default some elements are what's called block display, for example <h1> and <p>
+Block elements are those that take up essentially the whole width of the screen on a web page
+effectively blocking out any other elements from sitting next to it on the left or on the right
+
+Common Block Elements:
+Paragraphs (<p>)
+Headers (<h1> through <h6>)
+Divisions (<div>)
+List and list items (<ol>,<ul>,and<li>)
+Forms (<form>)
+```
+```css
+display:inline;
+```
+```
+An inline display element only takes up as much space as it needs to in the height and in its width
+With Inline Elements, you can't change the width
+Common Inline Elements:
+Spans (<span>)
+Images(<img>)
+Anchors(<a>)
+```
+```css
+display:inline-block;
+```
+```
+Whit inline-block display you are allowed to change its width, and also be able to make them go onto the same line
+```
+```css
+display:none;
+```
+```
+The none display property get rid of the element
+```
+```css
+visibility:hidden;
+```
+```
+Visibility can set to hidden, and what this does is that it makes that element disappear but it keeps its original 
+position, and all the other elements still flow around it as if it's still there
+```
+[Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
