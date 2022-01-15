@@ -283,6 +283,33 @@ of where that image used to be and we're giving it a 50 pixel Margin from the to
 of our current image
 ```
 
-## Absolute Positioning
+## Fix and Absolute Positioning
 ```
+Absolute
+With absolute positioning we are positioning the element, relative to its parent
+div{
+position:relative
+}
+img {
+position:absolute
+right:30px;
+}
+in this case its parent of the img element is the div
+In most cases the parent is simply the entire body of the web page
+So the position when you're using absolute positioning looks liek you're givin
+it a margin relative to the entire page
+
+Fix
+is positioned relative to the browser window, which means
+that will stay in place even when scrolling the page
+```
+
+##Centering Elements with CSS
+```css
+text-align: center;
+text-align:center; will center everything inside will center everything inside the parent element, that doesn't have a width set
+
+margin:0 auto 0 auto;
+When "auto" is applied it will center the element either vertically or horizontally
+If it is a block element and it has a width set, then you're going to have to center it using this auto value in the margin
 ```
