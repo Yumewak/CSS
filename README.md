@@ -304,12 +304,32 @@ is positioned relative to the browser window, which means
 that will stay in place even when scrolling the page
 ```
 
-##Centering Elements with CSS
+## Centering Elements with CSS
 ```css
 text-align: center;
-text-align:center; will center everything inside will center everything inside the parent element, that doesn't have a width set
+text-align:center; will center everything inside the parent element, that doesn't have a width set
 
 margin:0 auto 0 auto;
 When "auto" is applied it will center the element either vertically or horizontally
 If it is a block element and it has a width set, then you're going to have to center it using this auto value in the margin
+```
+
+## Font Styling
+```
+First copy the code into the <head> of your html 
+```
+```html
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet"> 
+</head>
+```
+```
+Apply the CSS rules to specify families 
+```
+```css
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
 ```
