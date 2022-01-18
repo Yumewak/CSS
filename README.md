@@ -354,3 +354,14 @@ The root em "rem" ignore all of the parent setting for the font size and just se
 font-size: 562.5%;
 font-size: 5.625em
 ```
+
+##Float and Clear
+```
+Only use float when its realy necessary
+Float wrapp text around an element, leave the float property for the cases of wrapping text
+Clear does the oposite
+```
+```css
+    float: left;
+    clear:right;    
+```
