@@ -333,3 +333,24 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 ```
+
+## CSS Sizing
+```
+Static size
+```
+```css
+font-size: 90px;
+line-height: 4;
+```
+```
+Dynamic size
+100% = 16px
+1em = 16px
+The value of dynamic units is inherited and added on top of whatever it got from is parent
+The root em "rem" ignore all of the parent setting for the font size and just set it to the relative to the root
+
+```
+```css
+font-size: 562.5%;
+font-size: 5.625em
+```
