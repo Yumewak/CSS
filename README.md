@@ -355,7 +355,7 @@ font-size: 562.5%;
 font-size: 5.625em
 ```
 
-##Float and Clear
+## Float and Clear
 ```
 Only use float when its realy necessary
 Float wrapp text around an element, leave the float property for the cases of wrapping text
