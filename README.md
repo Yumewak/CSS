@@ -365,3 +365,58 @@ Clear does the oposite
     float: left;
     clear:right;    
 ```
+
+## CSS Z-Index and stack order
+```
+Each element on screen has a x and y position so we can move the image up, down, lef, right, but it's also got a z position
+or z-index i.e. towards you or away from you
+
+Create 3 divs with red, yellow and blue class and give a content i.e. his respective color has content
+In the css file style the divs with a 100 px height and width, and a border 1 px solid
+Also style every class of red, yellow and blue with his respective background-color
+
+One of the easy ways of making something show up on top of another thing is nesting it: put the yellow div inside the red div
+
+Made all divs position absolute and place divs with this scheme: red at bottom, yellow in the middle, blue in front
+Play with the order of divs changin the order in HTML doc
+
+By default z-index is 0, solo changin the z-index to 1 will put the closest to the user and further away from the screen
+z-index:-1 will stack at the bottom, the higher the number the closest to the user, and the lower is the number the
+further away is from the user
+
+Warning: z-index only work if your element is positioned: absolute, relative, fix
+
+Recommend review css display, css static and relative, css fix and absolute
+
+Hint to solve the challenge of the web page: remember that the section below is not white, it's see through by default
+so you need to make the background color white explicitly if you want to cover the image
+```
+```html
+<div class="red">Red</div>
+<div class="yellow">Yellow</div>
+<div class="blue">Blue</div>
+```
+```css
+div {
+    height:100px;
+    width:100px;
+    border:1px solid;
+    position:absolute;
+}
+.red {
+    background-color:red;
+    z-index:1;
+}
+.yellow {
+    background-color:yellow;
+    top:20px;
+    left:20px;
+    z-index:0;
+}
+.blue {
+    background-color:blue;
+    top:40px;
+    left:40px;
+    z-index:-1;
+}
+```
