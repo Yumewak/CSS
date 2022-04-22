@@ -436,3 +436,49 @@ with the image being wrapped by a div and give a class i.e. <div class="image-co
     right: 30%;
 }
 ```
+
+## Media query breakpoints
+```
+Questions:
+Why so many designs for mobile and desktop?
+What are media queries?
+What if i only want a tag i.e. the h1 to be red under certain condition
+
+Device:fixed thing
+Browser size: can change
+Viewport: size of screen
+
+Since 2016 the number of people who browsed the web on mobiel overtook those who browsed on desktop
+
+Options for a mobile optimization:
+1.- Make a separate mobile site
+2.- Make it responsive
+
+We're going to make our web site responsive without using bootstrap, but CSS native functionality only
+```
+```css
+@media print {
+	h1 { 
+		color:red;
+	}
+}
+
+@media screen
+@media speech
+@media  <type> <feature>
+```
+```css
+h1 {
+    font-size:30px;
+}
+@media (min-width:900px) and (max-width:1000px) {
+    h1 {
+        font-size:60px;
+    }
+}
+```
+```
+When we go into the tablet size or smaller we need to change the position of our image from position absolute, where it's taken
+out of the HTML flow and it doesn't take up its own space, to static when it's being displayed on a smaller screen, so it starts
+taking up the full amount of space that it needs again.
+```
