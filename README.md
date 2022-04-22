@@ -420,3 +420,19 @@ div {
     z-index:-1;
 }
 ```
+```
+There whas a problem with the image that in bootstrap 4, the 'col' classes have predefined 'position: relative;', in bootstrap 5, 
+the col classes don't have position: relative;. So you have to add it manually to the col div by adding a custom class like
+with the image being wrapped by a div and give a class i.e. <div class="image-container">, and use image-container to add position:relative
+```
+```css
+.image-container{
+    position: relative;
+}
+.iphone6{
+    transform: rotate(25deg);
+    width: 60%;
+    position: absolute;
+    right: 30%;
+}
+```
