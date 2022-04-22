@@ -436,6 +436,7 @@ with the image being wrapped by a div and give a class i.e. <div class="image-co
     right: 30%;
 }
 ```
+[z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
 
 ## Media query breakpoints
 ```
