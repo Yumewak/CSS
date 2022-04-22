@@ -482,3 +482,4 @@ When we go into the tablet size or smaller we need to change the position of our
 out of the HTML flow and it doesn't take up its own space, to static when it's being displayed on a smaller screen, so it starts
 taking up the full amount of space that it needs again.
 ```
+[@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
