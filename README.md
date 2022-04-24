@@ -484,3 +484,19 @@ out of the HTML flow and it doesn't take up its own space, to static when it's b
 taking up the full amount of space that it needs again.
 ```
 [@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
+
+## Tips and Tricks
+```
+You can give an id to an href of an anchor tag has a link
+```
+```html
+<a class="nav-link" href="#footer">Contact</a>
+
+<footer id="footer">
+```
+```
+You can use the transform property to rotate an image
+```
+```css
+transform: rotate(25deg)
+```
