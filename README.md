@@ -494,9 +494,3 @@ You can give an id to an href of an anchor tag has a link
 
 <footer id="footer">
 ```
-```
-You can use the transform property to rotate an image
-```
-```css
-transform: rotate(25deg)
-```
