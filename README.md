@@ -495,3 +495,57 @@ You can give an id to an href of an anchor tag has a link
 
 <footer id="footer">
 ```
+
+## Combining selectors
+```
+Combine different selectors in order to apply styles more specifically
+Pick & mix selectors:
+```
+```
+1.- Multiple selectors
+This is a way of shortening your code and grouping similar things together
+You're going to see this most commonly at the HTML element level
+```
+```css
+h1,h2,h3,h4,h5,h6 {font-family: "Montserrat-Bold";}
+selector1, selector2 {style:property;}
+```
+```
+2.- Hierarchical selectors
+You should have one space between selectors, the first selector is from the parent and the 
+second selector is from the child.
+The syntax will only work in a parent child situation (an element inside another)
+You would read this hierarchical selectors from right to left
+The following code target the "container-fluid" class that is inside the id of title
+```
+```css
+#title .container-fluid {
+	padding-top:3%;
+	text-align:left;
+}
+div h1 {color:red;}
+```
+```
+3.- Combined selectors
+There is no space between selectors
+They have to all occur in the same element
+
+When there is no space you're reading from lef to right
+When there is space (hierarchical) you're reading from right to left
+
+The following code it reads has "The h1 that has an id of title should have the color red"
+```
+```css
+h1#title{color:red}
+selector1#selector2{}
+```
+```
+element .class vs element.class (space vs no space)
+
+You can try create one container div whit the class "container" and another div with the class "container-fluid"
+(remember container-fluid is a bootstrap class) and put an h1 inside both with a class of "title"
+Write "Hello World" in the first h1, and "Goodbye World" in the second h1
+
+Try to apply some css style in order to change the color of the Hello World, but not the Goodbye World.
+```
+[Test your skill](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks#selectors_one)
