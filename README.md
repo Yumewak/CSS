@@ -549,3 +549,61 @@ Write "Hello World" in the first h1, and "Goodbye World" in the second h1
 Try to apply some css style in order to change the color of the Hello World, but not the Goodbye World.
 ```
 [Test your skill](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks#selectors_one)
+
+## Selector priority
+```
+Having the follow HTML code, we study the selector priority in different scenarios
+```
+```html
+<h1 id="heading" class="title">Hello World</h1>
+```
+```
+The result is color green, first apply the color red and then apply the color green, and that's the final color
+```
+```css
+h1 {
+	color:red;
+	color:green;
+}
+```
+```
+The result is color yellow, because class is more specific than an HTML element
+```
+```css
+h1 {
+	color:red;
+}
+.title {
+	color:yellow;
+}
+```
+```
+The result is blue because id has the highest priority
+```
+```css
+h1 {
+	color:red;
+}
+.title {
+	color:yellow;
+}
+#heading {
+	color:blue;
+}
+```
+```
+The result is orange because inline css have even higher priority than the id's
+```
+```html
+<h1 id="heading" class="title" style="color:orange;">
+```
+```
+Use ids very sparingly don't try and use it when you can use a class
+
+In the proyect we only got id's for our sections, Bootstrap carrousel or Bootstrap elements
+
+When applying classes, use only one class, it's weird that Bootstrap uses multiple classes
+but in terms of CSS classes that youre applying yourself it's recommend to use one
+
+Avoid inline styles at all costs
+```
