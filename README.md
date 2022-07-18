@@ -294,6 +294,7 @@ img {
 position:absolute
 right:30px;
 }
+Note that the image is inside a div with a relativa position
 in this case its parent of the img element is the div
 In most cases the parent is simply the entire body of the web page
 So the position when you're using absolute positioning looks liek you're givin
