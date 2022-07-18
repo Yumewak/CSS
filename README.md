@@ -295,8 +295,9 @@ position:absolute
 right:30px;
 }
 Note that the image is inside a div with a relativa position
-in this case its parent of the img element is the div
-In most cases the parent is simply the entire body of the web page
+Parent doesn't always have to be the body, it can also be the closest parent that has a relative layer
+In this case its parent of the img element is the div that has a "position:relative"
+But in most cases the parent is simply the entire body of the web page
 So the position when you're using absolute positioning looks liek you're givin
 it a margin relative to the entire page
 
